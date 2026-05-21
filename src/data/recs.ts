@@ -337,7 +337,8 @@ export const recs: Rec[] = [
     tip: "Buy and top up at MRT stations, 7-Eleven, FamilyMart, and other convenience stores. Convenience stores often have more fun designs if you want a cute one instead of the plain MRT-station card.",
     tags: ["transit", "convenience stores", "easy"],
     mapQuery: "Taipei Main Station EasyCard",
-    hideMap: true,
+    mapUrl: "https://www.easycard.com.tw/en/",
+    actionLabel: "Official site",
   },
   {
     name: "YouBike / U-Bike",
