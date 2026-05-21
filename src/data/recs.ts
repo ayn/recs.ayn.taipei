@@ -244,9 +244,9 @@ export const recs: Rec[] = [
   },
   {
     name: "榕美樹館",
-    area: "Dadaocheng",
+    area: "Zhongshan",
     category: "desserts",
-    note: "Beautiful old-house tea and dessert cafe with a relaxed Taipei atmosphere. Nice slower stop after walking around Dadaocheng or nearby neighborhoods.",
+    note: "Beautiful old-house tea and dessert cafe with a relaxed Taipei atmosphere. Nice slower stop around Zhongshan or nearby neighborhoods.",
     tags: ["dessert", "tea", "slow-taipei"],
     mapQuery: "榕美樹館 台北",
   },
