@@ -551,13 +551,15 @@ const isMapsLink = (href: string) =>
                         ))}
                         <span class="transit-detail">{rec.gettingThere.detail}</span>
                       </p>
-                    )}
-                    <div class="rec-bottom">
+                  )}
+                  <div class="rec-bottom">
+                    {!rec.hideMap && (
                       <a class="map" href={rec.mapUrl ?? mapsUrl(rec.mapQuery)} target="_blank" rel="noreferrer">
-                        Map
+                        {rec.actionLabel ?? "Map"}
                       </a>
-                      {rec.tags.map((tag) => <span class="tag">{tag}</span>)}
-                    </div>
+                    )}
+                    {rec.tags.map((tag) => <span class="tag">{tag}</span>)}
+                  </div>
                   </article>
                 );
               })}
