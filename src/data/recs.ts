@@ -150,6 +150,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "Uber/taxi", tone: "car" }], detail: "Easiest from Taipei, especially with 2-4 people. Transit option: TRA to Ruifang, then bus or taxi up to Jiufen." },
     tags: ["day trip", "touristy but worth it", "views"],
     mapQuery: "Jiufen Old Street",
+    mapUrl: "https://maps.app.goo.gl/Z6NEKenk8UK1BUjW7",
   },
   {
     name: "Yingge Ceramics Old Street / 鶯歌陶瓷老街",
@@ -170,6 +171,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Taipei 101 / World Trade Center. Blue Line to Taipei City Hall also works for a Xinyi walk." },
     tags: ["first-timer", "landmark", "practical"],
     mapQuery: "Taipei 101",
+    mapUrl: "https://maps.app.goo.gl/cYD4aSD66YXEqTdw7",
   },
   {
     name: "Elephant Mountain / 象山",
@@ -179,6 +181,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Xiangshan, then follow signs to the trail stairs." },
     tags: ["view", "sunset", "stairs"],
     mapQuery: "Elephant Mountain Taipei",
+    mapUrl: "https://maps.app.goo.gl/8nVzrGPfdRG1gRKh9",
   },
   {
     name: "Jiantanshan Trail to the overlook / 劍潭山親山步道",
@@ -199,6 +202,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Chiang Kai-shek Memorial Hall." },
     tags: ["first-timer", "landmark", "easy stop"],
     mapQuery: "Chiang Kai-shek Memorial Hall",
+    mapUrl: "https://maps.app.goo.gl/nnPWorbdnz8Z9rzB9",
   },
   {
     name: "Beitou Hot Springs / 北投溫泉",
@@ -209,6 +213,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Beitou, then transfer one stop to Xinbeitou." },
     tags: ["hot spring", "rainy day", "slow-taipei"],
     mapQuery: "Beitou Hot Springs Taipei",
+    mapUrl: "https://maps.app.goo.gl/V4vDePpcJTpQjJ3Z7",
   },
   {
     name: "Maokong Gondola / 貓空纜車",
@@ -219,6 +224,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Brown Line", tone: "brown" }], detail: "Taipei Zoo, then walk to the Maokong Gondola station." },
     tags: ["tea", "views", "gondola"],
     mapQuery: "Maokong Gondola Taipei",
+    mapUrl: "https://maps.app.goo.gl/AoDwJjh15KLAUMad8",
   },
   {
     name: "Yongkang Street / 永康街",
@@ -228,6 +234,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen. Start around Yongkang Street and wander from there." },
     tags: ["first-timer", "food", "walk"],
     mapQuery: "Yongkang Street Taipei",
+    mapUrl: "https://maps.app.goo.gl/WcyywXgSomsynrLw5",
   },
   {
     name: "Zhongshan / 中山",
@@ -237,6 +244,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan. Most of the good wandering is north and east of the station." },
     tags: ["shopping", "cafes", "k-pop"],
     mapQuery: "Zhongshan Station Taipei",
+    mapUrl: "https://maps.app.goo.gl/ay8jvjrxdnqKe7Zz9",
   },
   {
     name: "Huashan 1914 / 華山1914",
@@ -246,6 +254,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Zhongxiao Xinsheng, then walk." },
     tags: ["creative park", "rainy day", "shops"],
     mapQuery: "Huashan 1914 Creative Park Taipei",
+    mapUrl: "https://maps.app.goo.gl/KERjLJuV1hQQWVio8",
   },
   {
     name: "Guang Hua / 光華商場 and Syntrend / 三創",
@@ -255,6 +264,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Zhongxiao Xinsheng, then walk." },
     tags: ["tech", "shopping", "gadgets"],
     mapQuery: "Guang Hua Digital Plaza Syntrend Taipei",
+    mapUrl: "https://maps.app.goo.gl/oatSGFvF6xoAmYWf7",
   },
   {
     name: "Songshan Cultural Park / 松山文創園區",
@@ -264,6 +274,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Sun Yat-Sen Memorial Hall or Taipei City Hall, then walk." },
     tags: ["creative park", "design", "shops"],
     mapQuery: "Songshan Cultural and Creative Park Taipei",
+    mapUrl: "https://maps.app.goo.gl/TLMwRN86dehUC5zP7",
   },
   {
     name: "Ximending / 西門町",
@@ -273,6 +284,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Green Line", tone: "green" }], detail: "Ximen." },
     tags: ["night", "shopping", "street food"],
     mapQuery: "Ximending Taipei",
+    mapUrl: "https://maps.app.goo.gl/J8bK5ixmmgkQKqvZA",
   },
   {
     name: "Dadaocheng / 大稻埕 / Dihua Street 迪化街",
@@ -282,6 +294,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Beimen for the south end, or Daqiaotou for the north end." },
     tags: ["old taipei", "tea", "slow walk"],
     mapQuery: "Dihua Street Taipei",
+    mapUrl: "https://maps.app.goo.gl/NQdNTfSq4ygMSoYC9",
   },
   {
     name: "Datong / 大同",
@@ -291,6 +304,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }, { label: "MRT Red Line", tone: "red" }, { label: "TRA", tone: "train" }], detail: "Beimen, Zhongshan, Daqiaotou, or Taipei Main Station depending on where you start." },
     tags: ["old taipei", "crafts", "walk"],
     mapQuery: "Datong District Taipei",
+    mapUrl: "https://maps.app.goo.gl/2bKfESS6XSAcJgUMA",
   },
   {
     name: "Tianmu / 天母",
@@ -300,6 +314,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Zhishan or Shipai, then bus, taxi, or Uber. From central Taipei, Uber is often simplest." },
     tags: ["weekend", "cafes", "slower pace"],
     mapQuery: "Tianmu Taipei",
+    mapUrl: "https://maps.app.goo.gl/BnDYWQW1cMZs2B9B8",
   },
   {
     name: "Riverside paths / 河濱自行車道",
@@ -308,6 +323,8 @@ export const recs: Rec[] = [
     note: "For running or cycling, just look at the map and head to the closest entrance to the river path. The riverside network connects everywhere, and you can get 20+ miles without having to stop for city traffic.",
     tags: ["running", "cycling", "river path"],
     mapQuery: "Taipei riverside bikeway",
+    mapUrl:
+      "https://www.google.com/maps/search/%E6%B2%B3%E6%BF%B1%E8%87%AA%E8%A1%8C%E8%BB%8A%E9%81%93/@25.1178494,121.4907353,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     name: "Taipei athletics warm-up track / 臺北田徑暖身場",
@@ -379,6 +396,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }], detail: "Songshan. TRA to Songshan also works. The entrance is right by the temple." },
     tags: ["first-timer", "night market", "pepper bun"],
     mapQuery: "Raohe Night Market",
+    mapUrl: "https://maps.app.goo.gl/kssDSGWArAFE25jT8",
   },
   {
     name: "Ningxia Night Market / 寧夏夜市",
@@ -388,6 +406,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Shuanglian, then walk west. Zhongshan also works if you are already there." },
     tags: ["food", "night market", "compact"],
     mapQuery: "Ningxia Night Market",
+    mapUrl: "https://maps.app.goo.gl/kwSW7CxoctqjDZAL6",
   },
   {
     name: "Shilin Night Market / 士林夜市",
@@ -397,6 +416,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Jiantan, Exit 1. Do not get off at Shilin Station." },
     tags: ["classic", "touristy", "night market"],
     mapQuery: "Shilin Night Market",
+    mapUrl: "https://maps.app.goo.gl/BjQ5qHeKog9rnDzm9",
   },
   {
     name: "Din Tai Fung / 鼎泰豐",
@@ -407,6 +427,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Taipei 101 / World Trade Center for the Taipei 101 branch." },
     tags: ["first-timer", "xiao long bao", "easy"],
     mapQuery: "Din Tai Fung Taipei",
+    mapUrl: "https://maps.app.goo.gl/6q3fWLoBXTBPFPo66",
   },
   {
     name: "A Joy",
@@ -417,6 +438,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Taipei 101 / World Trade Center. It is inside Taipei 101." },
     tags: ["reservation", "splurge", "taipei 101"],
     mapQuery: "A Joy Taipei 101",
+    mapUrl: "https://maps.app.goo.gl/qzY8sAfJWhPmCnwD8",
   },
   {
     name: "Wulao Hotpot / 無老鍋",
@@ -427,6 +449,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen for Yongkang, or Taipei 101 / Xinyi Anhe area for Xinyi." },
     tags: ["hot pot", "dinner", "reservation"],
     mapQuery: "Wulao Hotpot Taipei",
+    mapUrl: "https://maps.app.goo.gl/WnN6Vvztr6SP3x5X8",
   },
   {
     name: "Orange Shabu / 橘色涮涮屋",
@@ -447,6 +470,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Chiang Kai-shek Memorial Hall." },
     tags: ["market", "snacks", "souvenirs"],
     mapQuery: "Nanmen Market Taipei",
+    mapUrl: "https://maps.app.goo.gl/FuUb6WHzYUTTBTi79",
   },
   {
     name: "SunnyHills / 微熱山丘",
@@ -456,7 +480,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }], detail: "Nanjing Sanmin, then walk or take a short taxi toward Minsheng Park." },
     tags: ["souvenirs", "pineapple cake", "gifts"],
     mapQuery: "SunnyHills Taipei Minsheng Park",
-    mapUrl: "https://www.sunnyhills.com.tw/",
+    mapUrl: "https://maps.app.goo.gl/npN9xWr4LD43zG857",
   },
   {
     name: "Shida Branch God's Stinky Tofu / 師大分部神之臭豆腐",
@@ -486,6 +510,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen." },
     tags: ["beef noodles", "classic", "yongkang"],
     mapQuery: "Yongkang Beef Noodles Taipei",
+    mapUrl: "https://maps.app.goo.gl/7GbBLDow7i5PhhMA8",
   },
   {
     name: "Lin Dong Fang Beef Noodles / 林東芳牛肉麵",
@@ -495,6 +520,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Brown Line", tone: "brown" }, { label: "MRT Green Line", tone: "green" }], detail: "Nanjing Fuxing, then walk or take a short taxi depending on the exact branch." },
     tags: ["beef noodles", "classic"],
     mapQuery: "Lin Dong Fang Beef Noodles Taipei",
+    mapUrl: "https://maps.app.goo.gl/L3DNpn69omRj77SX8",
   },
   {
     name: "Fu Hang Soy Milk / 阜杭豆漿",
@@ -504,6 +530,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Shandao Temple. The entrance is upstairs in Huashan Market." },
     tags: ["breakfast", "classic", "go early"],
     mapQuery: "Fu Hang Soy Milk Taipei",
+    mapUrl: "https://maps.app.goo.gl/dvJGtYjKkgKVPsjH6",
   },
   {
     name: "Yong He Soy Milk / 永和豆漿",
@@ -523,6 +550,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen." },
     tags: ["dessert", "mango ice", "first-timer"],
     mapQuery: "Smoothie House Yongkang Taipei",
+    mapUrl: "https://maps.app.goo.gl/7HsWF1EhG4sqXjAt9",
   },
   {
     name: "杉味豆花",
@@ -532,6 +560,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Shuanglian, then walk toward Ningxia Night Market." },
     tags: ["dessert", "douhua", "traditional"],
     mapQuery: "杉味豆花 台北",
+    mapUrl: "https://maps.app.goo.gl/JCDqEq1YbJAfsqxs8",
   },
   {
     name: "江記東門豆花 Dongmen Jiang Ji Douhua",
@@ -541,6 +570,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen." },
     tags: ["dessert", "douhua", "traditional"],
     mapQuery: "江記東門豆花 台北",
+    mapUrl: "https://maps.app.goo.gl/Vw9QMcPjSffAphT19",
   },
   {
     name: "榕美樹館",
@@ -550,6 +580,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan, then walk." },
     tags: ["dessert", "tea", "slow-taipei"],
     mapQuery: "榕美樹館 台北",
+    mapUrl: "https://maps.app.goo.gl/XD8qaHzVQfg16Mtf7",
   },
   {
     name: "AmorFati / 天命酒館",
@@ -559,6 +590,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Zhongxiao Dunhua, Exit 2. Walk about 3-5 minutes into the Yanji Street lanes." },
     tags: ["cocktails", "wine", "custom drinks"],
     mapQuery: "AmorFati 天命酒館 Taipei",
+    mapUrl: "https://maps.app.goo.gl/gJ78FZ8Xb7B61a1F8",
   },
   {
     name: "Hidden City / 隱城小城外",
@@ -568,15 +600,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Brown Line", tone: "brown" }], detail: "Da'an, Exit 3. It is on Xinyi Road Section 3." },
     tags: ["cocktails", "quiet", "date night"],
     mapQuery: "Hidden City 隱城 小城外 Taipei",
-  },
-  {
-    name: "Nothingness / 無",
-    area: "Taipei",
-    category: "bars",
-    note: "Serious cocktail stop for classic drinks. Walk-in focused, so go earlier if this is a priority.",
-    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Red Line", tone: "red" }], detail: "Taipei City Hall or Taipei 101 / World Trade Center, then walk into the Songshou Road side of Xinyi." },
-    tags: ["cocktails", "classics", "walk-in"],
-    mapQuery: "Nothingness 無 Taipei bar",
+    mapUrl: "https://maps.app.goo.gl/oSZK4Tf249GkobZA7",
   },
   {
     name: "unDer lab",
@@ -586,6 +610,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Sun Yat-Sen Memorial Hall, then walk south toward Guangfu South Road Lane 308. Uber also works well." },
     tags: ["cocktails", "experimental", "food"],
     mapQuery: "unDer lab Taipei",
+    mapUrl: "https://maps.app.goo.gl/NRqPVc9KaGL6wPER6",
   },
   {
     name: "Staff Only Club",
@@ -595,6 +620,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }], detail: "Gongguan, then walk or YouBike toward Shuiyuan Road. Uber is easiest at night." },
     tags: ["cocktails", "atmosphere", "house drinks"],
     mapQuery: "Staff Only Club Taipei",
+    mapUrl: "https://maps.app.goo.gl/2PSTuuUQxTSEAGNm9",
   },
   {
     name: "Bar Chihana / 千華",
@@ -604,6 +630,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan, then walk toward Linsen North Road Lane 159." },
     tags: ["late night", "cocktails", "smoking"],
     mapQuery: "Bar Chihana 千華 Taipei",
+    mapUrl: "https://maps.app.goo.gl/cjwN2Jyij4yXHoth6",
   },
   {
     name: "Moonshine Coffee Roasters",
@@ -613,6 +640,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location before routing. Uber is easiest if it is not already near your day plan." },
     tags: ["cafe", "coffee cocktails", "award-winning"],
     mapQuery: "Moonshine Coffee Roasters 私釀咖啡商行 Taipei",
+    mapUrl: "https://maps.app.goo.gl/ZqNtCG9aqxKEW4KQ7",
   },
   {
     name: "Starbucks Reserve Dream Plaza / 星巴克典藏 DREAM PLAZA 台北",
@@ -622,7 +650,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Taipei City Hall, then walk through Xinyi." },
     tags: ["coffee", "bookstore", "xinyi"],
     mapQuery: "Starbucks Reserve Dream Plaza Taipei",
-    mapUrl: "https://www.starbucks.com.tw/stores/reserve/flagship/index.jspx",
+    mapUrl: "https://maps.app.goo.gl/qodhEHDhQWUcRsw6A",
   },
   {
     name: "Fika Fika Cafe",
@@ -632,6 +660,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan, then walk." },
     tags: ["cafe", "zhongshan", "calm"],
     mapQuery: "Fika Fika Cafe Taipei",
+    mapUrl: "https://maps.app.goo.gl/hCUHrG8Nf8ztkWAW7",
   },
   {
     name: "Oasis Coffee Roasters Anhe",
@@ -675,7 +704,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "HSR", tone: "train" }, { label: "Bus", tone: "neutral" }], detail: "HSR to Taichung, then bus or private transfer to Sun Moon Lake." },
     tags: ["overnight", "lake", "splurge stay"],
     mapQuery: "Sun Moon Lake",
-    mapUrl: "https://www.google.com/maps/place/Sun+Moon+Lake",
+    mapUrl: "https://maps.app.goo.gl/grBjYEw1iG1t6rGU7",
   },
   {
     name: "Fleur de Chine Hotel Sun Moon Lake / 雲品溫泉酒店",
@@ -685,7 +714,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "Transfer", tone: "car" }], detail: "Usually easiest after HSR Taichung by hotel shuttle, bus, or private transfer." },
     tags: ["hotel", "splurge", "points"],
     mapQuery: "Fleur de Chine Hotel Sun Moon Lake",
-    mapUrl: "https://www.fleurdechinehotel.com/en/",
+    mapUrl: "https://maps.app.goo.gl/2HB2EKeuDsbWepyeA",
   },
   {
     name: "Taroko / 太魯閣",
@@ -696,7 +725,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "TRA", tone: "train" }, { label: "Car", tone: "car" }], detail: "Train to Hualien, then arrange a driver, tour, rental car, or hotel transfer depending on what is open." },
     tags: ["nature", "overnight", "check access"],
     mapQuery: "Taroko National Park",
-    mapUrl: "https://www.taroko.gov.tw/en/",
+    mapUrl: "https://maps.app.goo.gl/dQ11kPbDWCEnT7cFA",
   },
   {
     name: "Silks Place Taroko / 太魯閣晶英酒店",
@@ -707,7 +736,7 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "Transfer", tone: "car" }], detail: "Usually reached from Hualien by hotel shuttle, driver, or rental car." },
     tags: ["hotel", "splurge", "nature"],
     mapQuery: "Silks Place Taroko",
-    mapUrl: "https://taroko.silksplace.com/en/",
+    mapUrl: "https://maps.app.goo.gl/pDLbvTpbJmCLQUTJA",
   },
 ];
 
@@ -730,5 +759,5 @@ export const routes = [
 ];
 
 export function mapsUrl(query: string) {
-  return `https://www.google.com/maps/place/${encodeURIComponent(query).replace(/%20/g, "+")}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
