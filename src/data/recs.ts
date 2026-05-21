@@ -1,8 +1,11 @@
 export type Category =
   | "first-time"
   | "neighborhoods"
+  | "running-cycling"
+  | "getting-around"
   | "night-markets"
   | "food"
+  | "seafood"
   | "desserts"
   | "bars"
   | "cafes";
@@ -57,12 +60,15 @@ export type Section = {
 export const categories: { id: Category | "all"; label: string }[] = [
   { id: "all", label: "All" },
   { id: "first-time", label: "First-time Taipei" },
+  { id: "getting-around", label: "Getting around" },
   { id: "neighborhoods", label: "Neighborhoods" },
   { id: "night-markets", label: "Night markets" },
   { id: "food", label: "Food classics" },
+  { id: "seafood", label: "Seafood" },
   { id: "desserts", label: "Desserts" },
   { id: "bars", label: "Cocktails / bars" },
   { id: "cafes", label: "Cafes" },
+  { id: "running-cycling", label: "Run / bike rides" },
 ];
 
 export const sections: Section[] = [
@@ -70,6 +76,11 @@ export const sections: Section[] = [
     id: "first-time",
     title: "First-time Taipei",
     dek: "Classic stops that are still worth doing once.",
+  },
+  {
+    id: "getting-around",
+    title: "Getting around",
+    dek: "Small practical things that make Taipei easier.",
   },
   {
     id: "neighborhoods",
@@ -85,6 +96,11 @@ export const sections: Section[] = [
     id: "food",
     title: "Food classics and one splurge",
     dek: "Reliable Taipei staples, plus one nicer reservation if you plan ahead.",
+  },
+  {
+    id: "seafood",
+    title: "Seafood",
+    dek: "A polished fish-market stop when you want seafood without making it a whole formal meal.",
   },
   {
     id: "desserts",
@@ -108,6 +124,11 @@ export const sections: Section[] = [
       label: "Andrew's Google Maps coffee list",
       href: "https://maps.app.goo.gl/EcbgBobxpKbLHoAHA",
     },
+  },
+  {
+    id: "running-cycling",
+    title: "Running and rides",
+    dek: "Easy ways to exercise or see the city on foot or bike.",
   },
 ];
 
@@ -149,6 +170,17 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Xiangshan, then follow signs to the trail stairs." },
     tags: ["view", "sunset", "stairs"],
     mapQuery: "Elephant Mountain Taipei",
+  },
+  {
+    name: "Jiantanshan Trail to the overlook / 劍潭山親山步道",
+    area: "Shilin",
+    category: "first-time",
+    note: "Easy MRT-accessible hill walk with a great overlook. Nice alternative if Elephant Mountain is too obvious or you want views toward the Grand Hotel and northern Taipei.",
+    tip: "The map points to the overlook. Start from Jiantan Station and follow the Jiantanshan Trail up.",
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Jiantan, Exit 2. Walk about 10 minutes to the trailhead." },
+    tags: ["view", "hike", "overlook"],
+    mapQuery: "Jiantanshan Trail",
+    mapUrl: "https://maps.app.goo.gl/Q7jdt1smPvm57BcY6",
   },
   {
     name: "Chiang Kai-shek Memorial Hall / 中正紀念堂",
@@ -261,6 +293,56 @@ export const recs: Rec[] = [
     mapQuery: "Tianmu Taipei",
   },
   {
+    name: "Riverside paths / 河濱自行車道",
+    area: "Across Taipei",
+    category: "running-cycling",
+    note: "For running or cycling, just look at the map and head to the closest entrance to the river path. The riverside network connects everywhere, and you can get 20+ miles without having to stop for city traffic.",
+    tags: ["running", "cycling", "river path"],
+    mapQuery: "Taipei riverside bikeway",
+  },
+  {
+    name: "Taipei Municipal Stadium track / 臺北田徑場",
+    area: "Songshan",
+    category: "running-cycling",
+    note: "Best central track option for workouts. Good surface, real track feel, and easy MRT access. Check for event closures before planning a serious session.",
+    gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }], detail: "Taipei Arena, then walk over to the track." },
+    tags: ["running", "track", "workout"],
+    mapQuery: "Taipei Municipal Stadium track",
+  },
+  {
+    name: "Tianmu Sports Park / University of Taipei track / 天母運動公園",
+    area: "Tianmu",
+    category: "running-cycling",
+    note: "Good Tianmu-side option for track workouts or sports-park running. Useful if you are already staying or wandering around Tianmu.",
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Zhishan, then walk, bus, YouBike, or take a short Uber toward Tianmu." },
+    tags: ["running", "track", "tianmu"],
+    mapQuery: "Tianmu Sports Park University of Taipei Tianmu track",
+  },
+  {
+    name: "YouBike / U-Bike",
+    area: "Across Taipei",
+    category: "getting-around",
+    note: "Taipei's shared bikes are great and cheap for short hops, riverside rides, or connecting between MRT stops and neighborhoods.",
+    tags: ["bike share", "cheap", "easy"],
+    mapQuery: "YouBike Taipei",
+  },
+  {
+    name: "Uber",
+    area: "Across Taipei",
+    category: "getting-around",
+    note: "Uber is usually cheap in Taipei and easier than cabs if you do not speak Chinese. Especially useful late at night, in the rain, or for places that are awkward from the MRT.",
+    tags: ["transport", "easy", "rainy day"],
+    mapQuery: "Taipei",
+  },
+  {
+    name: "Uber Eats",
+    area: "Across Taipei",
+    category: "getting-around",
+    note: "Uber Eats is really inexpensive and convenient in Taipei. Great fallback when you want good food without fighting restaurant lines, crowds, heat, or rain.",
+    tags: ["food delivery", "easy", "rainy day"],
+    mapQuery: "Taipei restaurants",
+  },
+  {
     name: "Raohe Night Market / 饒河夜市",
     area: "Songshan",
     category: "night-markets",
@@ -318,6 +400,17 @@ export const recs: Rec[] = [
     mapQuery: "Wulao Hotpot Taipei",
   },
   {
+    name: "Orange Shabu / 橘色涮涮屋",
+    area: "Da'an",
+    category: "food",
+    note: "Nicer individual shabu-shabu option with polished service. The linked pin is Orange Shabu 1, and there are two other Taipei locations if another branch fits the day better.",
+    tip: "Reserve if you can.",
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Brown Line", tone: "brown" }], detail: "Zhongxiao Fuxing or Zhongxiao Dunhua, then walk into the Da'an Road lanes." },
+    tags: ["hot pot", "shabu-shabu", "reservation"],
+    mapQuery: "Orange Shabu Taipei",
+    mapUrl: "https://maps.app.goo.gl/8NknyvMwDyHcWWnW7",
+  },
+  {
     name: "Nanmen Market / 南門市場",
     area: "Zhongzheng",
     category: "food",
@@ -345,6 +438,16 @@ export const recs: Rec[] = [
     tags: ["stinky tofu", "snack", "classic"],
     mapQuery: "師大分部神之臭豆腐",
     mapUrl: "https://maps.app.goo.gl/PaCRKtPDjXszfc126",
+  },
+  {
+    name: "Addiction Aquatic Development / 上引水產",
+    area: "Zhongshan",
+    category: "seafood",
+    note: "Fancy fish-market complex for seafood, standing sushi, grilled seafood, hot pot, prepared foods, and snacky things to bring back. More polished than chaotic.",
+    gettingThere: { pills: [{ label: "MRT Orange Line", tone: "orange" }], detail: "Xingtian Temple, Exit 3, then a long walk or short taxi. Uber is easiest if you are not already nearby." },
+    tags: ["seafood", "market", "sushi"],
+    mapQuery: "Addiction Aquatic Development Taipei",
+    mapUrl: "https://maps.app.goo.gl/Z7o4DZNnyWkzCUNU7",
   },
   {
     name: "Yongkang Beef Noodles / 永康牛肉麵",
@@ -375,10 +478,10 @@ export const recs: Rec[] = [
   },
   {
     name: "Yong He Soy Milk / 永和豆漿",
-    area: "Multiple locations",
+    area: "Da'an",
     category: "food",
-    note: "Casual Taiwanese breakfast chain-style classic. Good for soy milk, dan bing, rice rolls, and fried dough without committing to the Fu Hang line.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "There are locations everywhere. Use this popular branch if it fits your route." },
+    note: "Casual Taiwanese breakfast classic. Good for soy milk, dan bing, rice rolls, and fried dough without committing to the Fu Hang line. There are locations all over, but this Da'an branch is an easy pin to use.",
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Brown Line", tone: "brown" }], detail: "Use the linked Da'an branch, or search nearby because there are locations everywhere." },
     tags: ["breakfast", "soy milk", "easy"],
     mapQuery: "Yong He Soy Milk Taipei",
     mapUrl: "https://maps.app.goo.gl/oYTjUEP3yC9EyeSX6",
@@ -424,7 +527,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Cocktail and wine bar that is good for custom drinks based on what you like. Better when you want a slower conversation with the bar.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location and hours before routing." },
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Zhongxiao Dunhua, Exit 2. Walk about 3-5 minutes into the Yanji Street lanes." },
     tags: ["cocktails", "wine", "custom drinks"],
     mapQuery: "AmorFati 天命酒館 Taipei",
   },
@@ -433,7 +536,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Quiet, movie-inspired cocktail bar pick. Good if you want something more polished and lower-key than a loud night out.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check hours before going." },
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Brown Line", tone: "brown" }], detail: "Da'an, Exit 3. It is on Xinyi Road Section 3." },
     tags: ["cocktails", "quiet", "date night"],
     mapQuery: "Hidden City 隱城 小城外 Taipei",
   },
@@ -442,7 +545,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Serious cocktail stop for classic drinks. Walk-in focused, so go earlier if this is a priority.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check current hours and line up early if needed." },
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Red Line", tone: "red" }], detail: "Taipei City Hall or Taipei 101 / World Trade Center, then walk into the Songshou Road side of Xinyi." },
     tags: ["cocktails", "classics", "walk-in"],
     mapQuery: "Nothingness 無 Taipei bar",
   },
@@ -451,7 +554,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Basement cocktail bar with more experimental drinks and food. Good when you want the drinks to be the point of the night.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check current booking rules before going." },
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Sun Yat-Sen Memorial Hall, then walk south toward Guangfu South Road Lane 308. Uber also works well." },
     tags: ["cocktails", "experimental", "food"],
     mapQuery: "unDer lab Taipei",
   },
@@ -460,7 +563,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Atmospheric cocktail bar in one of Taipei's remaining military dependents' village areas. Good for house cocktails and a setting that feels different.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check reservations and seating rules first." },
+    gettingThere: { pills: [{ label: "MRT Green Line", tone: "green" }], detail: "Gongguan, then walk or YouBike toward Shuiyuan Road. Uber is easiest at night." },
     tags: ["cocktails", "atmosphere", "house drinks"],
     mapQuery: "Staff Only Club Taipei",
   },
@@ -469,7 +572,7 @@ export const recs: Rec[] = [
     area: "Taipei",
     category: "bars",
     note: "Late-night industry bar for classic cocktails. Best for cocktail people, especially very late. Indoor smoking may be a dealbreaker.",
-    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check hours first; this is more of a late-night pick." },
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan, then walk toward Linsen North Road Lane 159." },
     tags: ["late night", "cocktails", "smoking"],
     mapQuery: "Bar Chihana 千華 Taipei",
   },
