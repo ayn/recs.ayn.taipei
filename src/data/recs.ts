@@ -91,8 +91,8 @@ export const sections: Section[] = [
   },
   {
     id: "cafes",
-    title: "Cafes, not coffee homework",
-    dek: "Places that work even if nobody wants to talk about extraction.",
+    title: "Cafes",
+    dek: "Easy stops for coffee, drinks, and a slower pause.",
     link: {
       label: "Andrew's Google Maps coffee list",
       href: "https://maps.app.goo.gl/EcbgBobxpKbLHoAHA",
