@@ -443,10 +443,20 @@ const isMapsLink = (href: string) =>
       }
 
       footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         padding: 28px 0 4px;
         color: var(--muted);
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         font-size: 0.9rem;
+      }
+
+      footer a {
+        color: var(--accent);
+        font-weight: 800;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
 
       @media (min-width: 760px) {
@@ -617,7 +627,10 @@ const isMapsLink = (href: string) =>
         </section>
       ))}
 
-      <footer>Made for friends visiting Taipei.</footer>
+      <footer>
+        <span>Made for friends visiting Taipei.</span>
+        <a href="https://www.instagram.com/ayn/" target="_blank" rel="noreferrer">@ayn</a>
+      </footer>
     </main>
 
     <script>
