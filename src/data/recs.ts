@@ -60,6 +60,17 @@ export type Section = {
   };
 };
 
+export type RouteStop = {
+  title: string;
+  detail: string;
+};
+
+export type Route = {
+  title: string;
+  note: string;
+  stops: RouteStop[];
+};
+
 export const categories: { id: Category | "all"; label: string }[] = [
   { id: "all", label: "All" },
   { id: "first-time", label: "First-time Taipei" },
@@ -740,21 +751,56 @@ export const recs: Rec[] = [
   },
 ];
 
-export const routes = [
+export const routes: Route[] = [
   {
     title: "Best first day",
-    stops: ["Yongkang", "CKS Memorial Hall", "Taipei 101 / Xinyi", "Raohe Night Market"],
     note: "Easy, classic, and not too clever. Good when someone lands with energy.",
+    stops: [
+      {
+        title: "Yongkang",
+        detail: "Start around Dongmen for food, dessert, and easy side-street wandering.",
+      },
+      {
+        title: "CKS Memorial Hall",
+        detail: "A quick landmark stop nearby. Big plaza, easy photos, low planning.",
+      },
+      {
+        title: "Taipei 101 / Xinyi",
+        detail: "Head to the landmark, get a Din Tai Fung number if you want dinner, then wander the malls while waiting.",
+      },
+      {
+        title: "Raohe Night Market",
+        detail: "End with a straightforward first night market. Pepper bun near the temple entrance.",
+      },
+    ],
   },
   {
     title: "Rainy day",
-    stops: ["Zhongshan shops/cafes", "Taipei 101 mall", "Din Tai Fung number", "Taipei 101 wander"],
     note: "Keeps things flexible and mostly indoors, with the Din Tai Fung wait turned into useful wandering time.",
+    stops: [
+      {
+        title: "Zhongshan",
+        detail: "Start with shops, cafes, and small boutiques while the weather decides what it is doing.",
+      },
+      {
+        title: "Taipei 101 mall",
+        detail: "Move indoors to Xinyi. Easy food, bookstore/mall wandering, and simple MRT access.",
+      },
+      {
+        title: "Din Tai Fung",
+        detail: "Get a number, then use the wait to see Taipei 101 instead of standing around.",
+      },
+    ],
   },
   {
     title: "Touristy but worth it",
-    stops: ["Jiufen late afternoon into evening"],
     note: "Go when the lanterns start turning on. Accept that it will be busy.",
+    stops: [
+      {
+        title: "Jiufen",
+        detail: "Take Uber/taxi if you want the easy version. Arrive late afternoon for tea, snacks, views, and lanterns after dark.",
+      },
+    ],
   },
 ];
 
