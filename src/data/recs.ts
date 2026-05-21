@@ -196,6 +196,15 @@ export const recs: Rec[] = [
     mapQuery: "Huashan 1914 Creative Park Taipei",
   },
   {
+    name: "Guang Hua / 光華商場 and Syntrend / 三創",
+    area: "Zhongzheng",
+    category: "neighborhoods",
+    note: "Taipei tech mall zone. Good for electronics, PC parts, gadgets, cameras, games, and some very local browsing energy.",
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Zhongxiao Xinsheng, then walk." },
+    tags: ["tech", "shopping", "gadgets"],
+    mapQuery: "Guang Hua Digital Plaza Syntrend Taipei",
+  },
+  {
     name: "Songshan Cultural Park / 松山文創園區",
     area: "Xinyi",
     category: "neighborhoods",
@@ -397,6 +406,16 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location before routing. Uber is easiest if it is not already near your day plan." },
     tags: ["cute cafe", "coffee cocktails", "award-winning"],
     mapQuery: "Moonshine Coffee Roasters 私釀咖啡商行 Taipei",
+  },
+  {
+    name: "Starbucks Reserve Dream Plaza / 星巴克典藏 DREAM PLAZA 台北",
+    area: "Xinyi",
+    category: "cafes",
+    note: "Massive, genuinely impressive Starbucks Reserve flagship. The signature drinks are actually not bad, and the space is worth seeing. Check out the Books.com.tw / 博客來 flagship bookstore in the same mall.",
+    gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Taipei City Hall, then walk through Xinyi." },
+    tags: ["coffee", "bookstore", "xinyi"],
+    mapQuery: "Starbucks Reserve Dream Plaza Taipei",
+    mapUrl: "https://www.starbucks.com.tw/stores/reserve/flagship/index.jspx",
   },
   {
     name: "Fika Fika Cafe",
