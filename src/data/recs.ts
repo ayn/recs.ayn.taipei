@@ -251,11 +251,11 @@ export const recs: Rec[] = [
     mapQuery: "榕美樹館 台北",
   },
   {
-    name: "Moonshine Coffee Roasters / 私釀咖啡商行",
+    name: "Moonshine Coffee Roasters",
     area: "Taipei",
     category: "cafes",
-    note: "Cute, polished cafe option. Good even if she is not a coffee person.",
-    tags: ["cute cafe", "easy", "polished"],
+    note: "Cute, polished cafe with legit coffee cocktails. The team has real competition pedigree; try Chocolate Gummy Bear if it is on the menu.",
+    tags: ["cute cafe", "coffee cocktails", "award-winning"],
     mapQuery: "Moonshine Coffee Roasters 私釀咖啡商行 Taipei",
   },
   {
