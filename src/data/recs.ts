@@ -1,7 +1,6 @@
 export type Category =
   | "first-time"
   | "neighborhoods"
-  | "tianmu-stops"
   | "night-markets"
   | "food"
   | "desserts"
@@ -20,18 +19,27 @@ export type Rec = {
   };
 };
 
+export type Section = {
+  id: Category;
+  title: string;
+  dek?: string;
+  link?: {
+    label: string;
+    href: string;
+  };
+};
+
 export const categories: { id: Category | "all"; label: string }[] = [
   { id: "all", label: "All" },
   { id: "first-time", label: "First-time Taipei" },
   { id: "neighborhoods", label: "Neighborhoods" },
-  { id: "tianmu-stops", label: "Tianmu stops" },
   { id: "night-markets", label: "Night markets" },
   { id: "food", label: "Food classics" },
   { id: "desserts", label: "Desserts" },
   { id: "cafes", label: "Cute cafes" },
 ];
 
-export const sections: { id: Category; title: string; dek?: string }[] = [
+export const sections: Section[] = [
   {
     id: "first-time",
     title: "First-time Taipei",
@@ -41,11 +49,6 @@ export const sections: { id: Category; title: string; dek?: string }[] = [
     id: "neighborhoods",
     title: "Neighborhoods to wander",
     dek: "Good areas when you want the day to unfold without too much planning.",
-  },
-  {
-    id: "tianmu-stops",
-    title: "Tianmu stops",
-    dek: "A few easy add-ons if you make it up to Tianmu.",
   },
   {
     id: "night-markets",
@@ -66,6 +69,10 @@ export const sections: { id: Category; title: string; dek?: string }[] = [
     id: "cafes",
     title: "Cute cafes, not coffee homework",
     dek: "Places that work even if nobody wants to talk about extraction.",
+    link: {
+      label: "Andrew's Taiwan coffee list",
+      href: "https://maps.app.goo.gl/EcbgBobxpKbLHoAHA",
+    },
   },
 ];
 
@@ -138,33 +145,9 @@ export const recs: Rec[] = [
     name: "Tianmu",
     area: "Shilin",
     category: "neighborhoods",
-    note: "More relaxed, suburban, and international. Home to TAS and TJS, so the area has a different rhythm: cafes, brunch spots, bakeries, families, and an easy weekend pace.",
+    note: "More relaxed, suburban, and international. Home to TAS and TJS, so the area has a different rhythm: cafes, brunch spots, bakeries, families, and an easy weekend pace. If you go, Oasis, All Day, and the weekend flea market are easy nearby stops.",
     tags: ["weekend", "cafes", "slower pace"],
     mapQuery: "Tianmu Taipei",
-  },
-  {
-    name: "Oasis Coffee Roasters",
-    area: "Tianmu",
-    category: "tianmu-stops",
-    note: "Bright, airy cafe with a very Tianmu feel. Easy place to spend a slow afternoon.",
-    tags: ["cafe", "tianmu", "slow afternoon"],
-    mapQuery: "Oasis Coffee Roasters Tianmu",
-  },
-  {
-    name: "All Day Roasting Company",
-    area: "Tianmu",
-    category: "tianmu-stops",
-    note: "Popular brunch and cafe spot that works well even for non-coffee people.",
-    tags: ["brunch", "cafe", "tianmu"],
-    mapQuery: "All Day Roasting Company Tianmu",
-  },
-  {
-    name: "Tianmu Flea Market",
-    area: "Tianmu",
-    category: "tianmu-stops",
-    note: "Weekend flea market with vintage finds, random objects, and a fun local atmosphere.",
-    tags: ["weekend", "flea market", "local"],
-    mapQuery: "Tianmu Flea Market",
   },
   {
     name: "Raohe Night Market",
