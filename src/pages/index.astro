@@ -55,7 +55,7 @@ const description =
       }
 
       .page {
-        width: min(100%, 1040px);
+        width: min(100%, 1120px);
         margin: 0 auto;
         padding: 22px 16px 42px;
       }
@@ -170,10 +170,12 @@ const description =
       }
 
       .section h2 {
-        font-size: clamp(1.75rem, 7vw, 3rem);
+        max-width: 12.5ch;
+        font-size: clamp(2.15rem, 9vw, 3.2rem);
         line-height: 1;
         letter-spacing: 0;
-        overflow-wrap: anywhere;
+        overflow-wrap: normal;
+        text-wrap: balance;
       }
 
       .section-dek {
@@ -315,15 +317,17 @@ const description =
           padding-right: 28px;
           padding-left: 28px;
         }
+      }
 
+      @media (min-width: 980px) {
         .section {
-          grid-template-columns: minmax(300px, 0.4fr) minmax(0, 1fr);
           display: grid;
-          gap: 42px;
+          grid-template-columns: 390px minmax(0, 1fr);
+          gap: 44px;
         }
 
         .section h2 {
-          font-size: clamp(2.45rem, 4vw, 3rem);
+          font-size: clamp(2.9rem, 4vw, 3.35rem);
         }
 
         .section-head {
@@ -333,8 +337,13 @@ const description =
         }
 
         .rec {
-          grid-template-columns: minmax(190px, 0.8fr) 1.2fr;
+          grid-template-columns: minmax(210px, 0.78fr) minmax(0, 1.22fr);
           padding: 18px;
+        }
+
+        .note,
+        .tip {
+          grid-column: 2;
         }
 
         .rec-bottom {
