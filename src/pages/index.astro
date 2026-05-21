@@ -238,6 +238,23 @@ const description =
         color: var(--muted);
       }
 
+      .tip {
+        margin: 0;
+        padding: 10px 12px;
+        border-left: 3px solid var(--green);
+        background: rgba(90, 118, 88, 0.09);
+        color: #4d5f48;
+        font-size: 0.95rem;
+      }
+
+      .tip strong {
+        color: var(--green);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 0.74rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
       .rec-bottom {
         display: flex;
         flex-wrap: wrap;
@@ -382,8 +399,13 @@ const description =
                     <h3>{rec.name}</h3>
                   </div>
                   <p class="note">{rec.note}</p>
+                  {rec.tip && (
+                    <p class="tip">
+                      <strong>Tip</strong> {rec.tip}
+                    </p>
+                  )}
                   <div class="rec-bottom">
-                    <a class="map" href={mapsUrl(rec.mapQuery)} target="_blank" rel="noreferrer">
+                    <a class="map" href={rec.mapUrl ?? mapsUrl(rec.mapQuery)} target="_blank" rel="noreferrer">
                       Map
                     </a>
                     {rec.tags.map((tag) => <span class="tag">{tag}</span>)}

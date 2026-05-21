@@ -11,8 +11,10 @@ export type Rec = {
   area: string;
   category: Category;
   note: string;
+  tip?: string;
   tags: string[];
   mapQuery: string;
+  mapUrl?: string;
   image?: {
     src: string;
     alt: string;
@@ -57,8 +59,8 @@ export const sections: Section[] = [
   },
   {
     id: "food",
-    title: "Food classics",
-    dek: "Reliable Taipei staples. Not hidden gems, just useful places to know.",
+    title: "Food classics and one splurge",
+    dek: "Reliable Taipei staples, plus one nicer reservation if you plan ahead.",
   },
   {
     id: "desserts",
@@ -89,8 +91,9 @@ export const recs: Rec[] = [
     name: "Taipei 101 / Xinyi",
     area: "Xinyi",
     category: "first-time",
-    note: "The obvious landmark, but still fun if it is your first time. Good to combine with dinner, drinks, or a mall break nearby.",
-    tags: ["first-timer", "landmark", "easy"],
+    note: "The obvious landmark, but still fun if it is your first time. Good to combine with food, a mall break, or wandering around Xinyi.",
+    tip: "If you want Din Tai Fung, get a number first, then do the touristy 101 stuff while you wait. If you do not care about the observatory or tuned mass damper, Simple Kaffa Sola on 88F is a lower-commitment way to get high up in the building.",
+    tags: ["first-timer", "landmark", "practical"],
     mapQuery: "Taipei 101",
   },
   {
@@ -178,8 +181,18 @@ export const recs: Rec[] = [
     area: "Multiple locations",
     category: "food",
     note: "Famous worldwide, but still worth doing in Taipei. Xiao long bao, cucumber salad, fried rice, spicy wontons.",
+    tip: "At the Taipei 101 branch, grab a number before wandering the building.",
     tags: ["first-timer", "xiao long bao", "easy"],
     mapQuery: "Din Tai Fung Taipei",
+  },
+  {
+    name: "A Joy",
+    area: "Taipei 101",
+    category: "food",
+    note: "Big splurge buffet on 86F of Taipei 101. Worth it if you want one nicer reservation with a view.",
+    tip: "If you have enough lead time, book early: A Joy uses a one-month reservation window, with online booking at 9am and phone booking at 10am. Card concierge is worth trying if you have it.",
+    tags: ["reservation", "splurge", "taipei 101"],
+    mapQuery: "A Joy Taipei 101",
   },
   {
     name: "Yongkang Beef Noodles",
@@ -254,20 +267,34 @@ export const recs: Rec[] = [
     mapQuery: "Fika Fika Cafe Taipei",
   },
   {
-    name: "Coffee Law",
-    area: "Dadaocheng",
+    name: "Oasis Coffee Roasters Anhe",
+    area: "Da'an / Anhe",
     category: "cafes",
-    note: "A comfortable Dadaocheng cafe stop if you are already wandering Dihua Street.",
-    tags: ["cafe", "dadaocheng", "walk break"],
-    mapQuery: "Coffee Law Dadaocheng Taipei",
+    note: "Polished specialty coffee spot that still feels easy to recommend. Good if you are around Da'an, Xinyi, or Yongkang.",
+    tags: ["cafe", "coffee", "daan"],
+    mapQuery: "Oasis Coffee Roasters Anhe Taipei",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=25.0340477%2C121.5517744&query_place_id=ChIJY-JuuXOrQjQRZA5wqDOYtFY",
   },
   {
-    name: "Powder Workshop",
-    area: "Yongkang",
+    name: "Oasis Roasting Lab",
+    area: "Tianmu",
     category: "cafes",
-    note: "Small, cute Yongkang-area stop for drinks and something sweet between walks.",
-    tags: ["cute cafe", "yongkang", "dessert"],
-    mapQuery: "Powder Workshop Taipei",
+    note: "The Tianmu-side Oasis stop. Best if you are already making Tianmu a slower weekend wander.",
+    tags: ["cafe", "tianmu", "slow-taipei"],
+    mapQuery: "Oasis Roasting Lab Tianmu Taipei",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=25.119019%2C121.5319392&query_place_id=ChIJWRwDfzGvQjQR-xr7RZ5-rkQ",
+  },
+  {
+    name: "光生 MITSUO",
+    area: "Taipei Main / Taiyuan Road",
+    category: "cafes",
+    note: "Small Japanese-feeling coffee and vinyl spot near Taipei Main. Nice when you want a quieter pause around the station area.",
+    tags: ["cafe", "vinyl", "quiet"],
+    mapQuery: "光生 MITSUO 台北",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=25.0494399%2C121.5157538&query_place_id=ChIJP1Ftx1-pQjQRj1jxNrNocNM",
   },
 ];
 
@@ -279,8 +306,8 @@ export const routes = [
   },
   {
     title: "Rainy day",
-    stops: "Zhongshan shops and cafes -> Taipei 101 mall -> Din Tai Fung",
-    note: "Keeps things flexible and mostly indoors without feeling trapped in malls all day.",
+    stops: "Zhongshan shops and cafes -> Taipei 101 mall -> Din Tai Fung number -> Taipei 101 wander",
+    note: "Keeps things flexible and mostly indoors, with the Din Tai Fung wait turned into useful wandering time.",
   },
   {
     title: "Touristy but worth it",
@@ -290,5 +317,5 @@ export const routes = [
 ];
 
 export function mapsUrl(query: string) {
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  return `https://www.google.com/maps/place/${encodeURIComponent(query).replace(/%20/g, "+")}`;
 }
