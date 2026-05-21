@@ -8,7 +8,8 @@ export type Category =
   | "seafood"
   | "desserts"
   | "bars"
-  | "cafes";
+  | "cafes"
+  | "outside-taipei";
 
 export type TransitTone =
   | "red"
@@ -68,6 +69,7 @@ export const categories: { id: Category | "all"; label: string }[] = [
   { id: "desserts", label: "Desserts" },
   { id: "bars", label: "Cocktails / bars" },
   { id: "cafes", label: "Cafes" },
+  { id: "outside-taipei", label: "Outside Taipei" },
   { id: "running-cycling", label: "Run / bike rides" },
 ];
 
@@ -124,6 +126,11 @@ export const sections: Section[] = [
       label: "Andrew's Google Maps coffee list",
       href: "https://maps.app.goo.gl/EcbgBobxpKbLHoAHA",
     },
+  },
+  {
+    id: "outside-taipei",
+    title: "Outside Taipei",
+    dek: "Not a full Taiwan itinerary, just a couple bigger trips worth considering.",
   },
   {
     id: "running-cycling",
@@ -636,6 +643,49 @@ export const recs: Rec[] = [
     mapQuery: "光生 MITSUO 台北",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=25.0494399%2C121.5157538&query_place_id=ChIJP1Ftx1-pQjQRj1jxNrNocNM",
+  },
+  {
+    name: "Sun Moon Lake / 日月潭",
+    area: "Nantou",
+    category: "outside-taipei",
+    note: "Classic overnight outside Taipei. Lake views, slower pace, boat/bike/walk options, and a nice reset if the Taipei part of the trip is busy.",
+    tip: "Splurge stay: Fleur de Chine Hotel Sun Moon Lake. Good candidate for a nicer stay or points redemption if the pricing works.",
+    gettingThere: { pills: [{ label: "HSR", tone: "train" }, { label: "Bus", tone: "neutral" }], detail: "HSR to Taichung, then bus or private transfer to Sun Moon Lake." },
+    tags: ["overnight", "lake", "splurge stay"],
+    mapQuery: "Sun Moon Lake",
+    mapUrl: "https://www.google.com/maps/place/Sun+Moon+Lake",
+  },
+  {
+    name: "Fleur de Chine Hotel Sun Moon Lake / 雲品溫泉酒店",
+    area: "Sun Moon Lake",
+    category: "outside-taipei",
+    note: "The obvious splurge hotel pick for Sun Moon Lake: lake views, hot spring hotel feel, and an easy base if the goal is to relax rather than optimize sightseeing.",
+    gettingThere: { pills: [{ label: "Transfer", tone: "car" }], detail: "Usually easiest after HSR Taichung by hotel shuttle, bus, or private transfer." },
+    tags: ["hotel", "splurge", "points"],
+    mapQuery: "Fleur de Chine Hotel Sun Moon Lake",
+    mapUrl: "https://www.fleurdechinehotel.com/en/",
+  },
+  {
+    name: "Taroko / 太魯閣",
+    area: "Hualien",
+    category: "outside-taipei",
+    note: "Big nature trip for marble gorge views and mountains. Worth planning carefully because road and trail access can change with repairs, weather, and rockfall risk.",
+    tip: "Check Taroko National Park road and trail status before booking around specific hikes.",
+    gettingThere: { pills: [{ label: "TRA", tone: "train" }, { label: "Car", tone: "car" }], detail: "Train to Hualien, then arrange a driver, tour, rental car, or hotel transfer depending on what is open." },
+    tags: ["nature", "overnight", "check access"],
+    mapQuery: "Taroko National Park",
+    mapUrl: "https://www.taroko.gov.tw/en/",
+  },
+  {
+    name: "Silks Place Taroko / 太魯閣晶英酒店",
+    area: "Taroko",
+    category: "outside-taipei",
+    note: "Friends loved staying here. It is the splurge option inside Taroko, more of a destination hotel than just a place to sleep.",
+    tip: "Because Taroko access changes, confirm what nearby roads, trails, and hotel activities are available for your dates.",
+    gettingThere: { pills: [{ label: "Transfer", tone: "car" }], detail: "Usually reached from Hualien by hotel shuttle, driver, or rental car." },
+    tags: ["hotel", "splurge", "nature"],
+    mapQuery: "Silks Place Taroko",
+    mapUrl: "https://taroko.silksplace.com/en/",
   },
 ];
 
