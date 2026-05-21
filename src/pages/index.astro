@@ -306,6 +306,11 @@ const description =
         color: #fffaf1;
       }
 
+      .transit-pill[data-tone="orange"] {
+        background: #f08b22;
+        color: #25211c;
+      }
+
       .transit-pill[data-tone="mixed"] {
         background: #25211c;
         color: #fffaf1;
@@ -488,9 +493,9 @@ const description =
                   )}
                   {rec.gettingThere && (
                     <p class="getting-there">
-                      <span class="transit-pill" data-tone={rec.gettingThere.tone}>
-                        {rec.gettingThere.label}
-                      </span>
+                      {rec.gettingThere.pills.map((pill) => (
+                        <span class="transit-pill" data-tone={pill.tone}>{pill.label}</span>
+                      ))}
                       <span class="transit-detail">{rec.gettingThere.detail}</span>
                     </p>
                   )}

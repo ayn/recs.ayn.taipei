@@ -46,7 +46,7 @@ Edit `src/data/recs.ts`. Each recommendation has:
 - `category`
 - `note`
 - optional `tip`
-- optional `gettingThere: { label, tone, detail }`
+- optional `gettingThere: { pills: [{ label, tone }], detail }`
 - `tags`
 - `mapQuery`
 - optional `image: { src, alt }`
