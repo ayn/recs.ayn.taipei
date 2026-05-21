@@ -331,7 +331,7 @@ export const recs: Rec[] = [
     name: "EasyCard / 悠遊卡",
     area: "Across Taipei",
     category: "getting-around",
-    note: "The easiest transit card for Taipei. Use it for MRT, buses, Maokong Gondola, YouBike setup, convenience stores, and lots of small payments.",
+    note: "The easiest transit card for Taipei. Use it for MRT, buses, Maokong Gondola, convenience stores, and lots of small payments.",
     tip: "Buy and top up at MRT stations, 7-Eleven, FamilyMart, and other convenience stores. Convenience stores often have more fun designs if you want a cute one instead of the plain MRT-station card.",
     tags: ["transit", "convenience stores", "easy"],
     mapQuery: "Taipei Main Station EasyCard",
@@ -344,6 +344,7 @@ export const recs: Rec[] = [
     tip: "Visitor setup: download the YouBike 2.0 app. Easiest is to register with a phone number, passport number for insurance, and payment method, then scan the bike QR code. You can also do single-ride rental with Visa, Mastercard, or JCB, but it uses a temporary card authorization/deposit. To return, push the bike fully into any YouBike 2.0 dock and wait for the return-success message.",
     tags: ["bike share", "cheap", "easy"],
     mapQuery: "YouBike Taipei",
+    mapUrl: "https://en.youbike.com.tw/region/taipei/",
   },
   {
     name: "Uber",
