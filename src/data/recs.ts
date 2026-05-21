@@ -13,6 +13,10 @@ export type Rec = {
   note: string;
   tags: string[];
   mapQuery: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
 };
 
 export const categories: { id: Category | "all"; label: string }[] = [
@@ -215,41 +219,33 @@ export const recs: Rec[] = [
     name: "Smoothie House",
     area: "Yongkang",
     category: "desserts",
-    note: "Famous mango shaved ice and snowy ice in Yongkang. Very first-time Taipei, in a good way.",
+    note: "Classic Taipei mango shaved ice spot in Yongkang. Very first-time Taipei, in a good way.",
     tags: ["dessert", "mango ice", "first-timer"],
     mapQuery: "Smoothie House Yongkang Taipei",
   },
   {
-    name: "Longdu Ice Dessert Parlor / 龍都冰菓專業家",
-    area: "Wanhua",
+    name: "杉味豆花",
+    area: "Ningxia / Dadaocheng",
     category: "desserts",
-    note: "Old-school shaved ice institution near Longshan Temple. Good backup when you want something more local and less Yongkang-first-timer.",
-    tags: ["dessert", "shaved ice", "old taipei"],
-    mapQuery: "Longdu Ice Dessert Parlor Taipei",
+    note: "Classic Taiwanese douhua spot near Ningxia. Great late-night dessert stop after wandering Dadaocheng or the night market.",
+    tags: ["dessert", "douhua", "traditional"],
+    mapQuery: "杉味豆花 台北",
   },
   {
-    name: "Bai-Shui Tofu Pudding / 白水豆花",
-    area: "Yongkang",
+    name: "江記東門豆花 Dongmen Jiang Ji Douhua",
+    area: "Dongmen / Yongkang",
     category: "desserts",
-    note: "Pretty, modern tofu pudding right on Yongkang Street. Easy dessert add-on after beef noodles or wandering the area.",
-    tags: ["dessert", "douhua", "yongkang"],
-    mapQuery: "Bai-Shui Tofu Pudding Yongkang Taipei",
+    note: "Old-school Taipei douhua spot with a very traditional feel. Easy stop around Yongkang or Dongmen.",
+    tags: ["dessert", "douhua", "traditional"],
+    mapQuery: "江記東門豆花 台北",
   },
   {
-    name: "Yu Pin Yuan Iced and Hot Tangyuan / 御品元冰火湯圓",
-    area: "Tonghua",
-    category: "desserts",
-    note: "Hot peanut or sesame tangyuan over shaved ice. Very Taiwan, very easy to like, and a good late-night dessert move.",
-    tags: ["dessert", "tangyuan", "night"],
-    mapQuery: "Yu Pin Yuan Iced and Hot Tangyuan Taipei",
-  },
-  {
-    name: "Soypresso",
+    name: "榕美樹館",
     area: "Dadaocheng",
     category: "desserts",
-    note: "Modern soy milk and tofu pudding stop in Dadaocheng. Nice break if you are already walking Dihua Street.",
-    tags: ["dessert", "douhua", "dadaocheng"],
-    mapQuery: "Soypresso Taipei",
+    note: "Beautiful old-house tea and dessert cafe with a relaxed Taipei atmosphere. Nice slower stop after walking around Dadaocheng or nearby neighborhoods.",
+    tags: ["dessert", "tea", "slow-taipei"],
+    mapQuery: "榕美樹館 台北",
   },
   {
     name: "Moonshine Coffee Roasters / 私釀咖啡商行",
