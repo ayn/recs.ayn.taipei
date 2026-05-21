@@ -131,9 +131,22 @@ const isMapsLink = (href: string) =>
       }
 
       .route .stops {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .route-stop {
+        display: inline-flex;
+        min-height: 28px;
+        align-items: center;
+        padding: 5px 9px;
+        border: 1px solid rgba(90, 118, 88, 0.24);
+        border-radius: 999px;
+        background: rgba(90, 118, 88, 0.08);
         color: var(--green);
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.82rem;
         font-weight: 700;
       }
 
@@ -479,7 +492,9 @@ const isMapsLink = (href: string) =>
             <article class="route">
               <h2>{route.title}</h2>
               <p>{route.note}</p>
-              <div class="stops">{route.stops}</div>
+              <div class="stops">
+                {route.stops.map((stop) => <span class="route-stop">{stop}</span>)}
+              </div>
             </article>
           ))}
         </div>
