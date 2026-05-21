@@ -151,19 +151,26 @@ const isMapsLink = (href: string) =>
         backdrop-filter: blur(14px);
       }
 
+      .filters,
+      .section {
+        scroll-margin-top: 76px;
+      }
+
       .filter {
         flex: 0 0 auto;
+        display: inline-flex;
         min-height: 38px;
+        align-items: center;
         padding: 9px 13px;
         border: 1px solid var(--line);
         border-radius: 999px;
         background: var(--paper);
         color: var(--muted);
         font: 700 0.86rem/1 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        cursor: pointer;
+        text-decoration: none;
       }
 
-      .filter[aria-pressed="true"] {
+      .filter[aria-current="true"] {
         border-color: var(--accent);
         background: var(--accent);
         color: #fffaf1;
@@ -478,21 +485,21 @@ const isMapsLink = (href: string) =>
         </div>
       </header>
 
-      <nav class="filters" aria-label="Recommendation filters">
+      <nav class="filters" id="recs" aria-label="Recommendation filters">
         {categories.map((category) => (
-          <button
+          <a
             class="filter"
-            type="button"
+            href={category.id === "all" ? "#recs" : `#${category.id}`}
             data-filter={category.id}
-            aria-pressed={category.id === "all" ? "true" : "false"}
+            aria-current={category.id === "all" ? "true" : undefined}
           >
             {category.label}
-          </button>
+          </a>
         ))}
       </nav>
 
       {sections.map((section) => (
-        <section class="section" data-section={section.id}>
+        <section class="section" id={section.id} data-section={section.id}>
           <div class="section-head">
             <h2>{section.title}</h2>
             {section.dek && <p class="section-dek">{section.dek}</p>}
@@ -562,12 +569,17 @@ const isMapsLink = (href: string) =>
     </main>
 
     <script>
-      const buttons = Array.from(document.querySelectorAll(".filter"));
+      const links = Array.from(document.querySelectorAll(".filter"));
       const sections = Array.from(document.querySelectorAll("[data-section]"));
+      const filters = new Set(links.map((link) => link.dataset.filter));
 
       function applyFilter(filter) {
-        buttons.forEach((button) => {
-          button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
+        links.forEach((link) => {
+          if (link.dataset.filter === filter) {
+            link.setAttribute("aria-current", "true");
+          } else {
+            link.removeAttribute("aria-current");
+          }
         });
 
         sections.forEach((section) => {
@@ -576,9 +588,38 @@ const isMapsLink = (href: string) =>
         });
       }
 
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => applyFilter(button.dataset.filter || "all"));
+      function currentFilter() {
+        const hash = window.location.hash.replace("#", "");
+        return filters.has(hash) ? hash : "all";
+      }
+
+      function scrollToFilter(filter) {
+        const target =
+          filter === "all"
+            ? document.querySelector("#recs")
+            : document.querySelector(`[data-section="${CSS.escape(filter)}"]`);
+
+        target?.scrollIntoView({ block: "start" });
+      }
+
+      links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          const filter = link.dataset.filter || "all";
+          history.pushState(null, "", link.getAttribute("href"));
+          applyFilter(filter);
+          requestAnimationFrame(() => scrollToFilter(filter));
+        });
       });
+
+      window.addEventListener("popstate", () => {
+        const filter = currentFilter();
+        applyFilter(filter);
+        requestAnimationFrame(() => scrollToFilter(filter));
+      });
+
+      applyFilter(currentFilter());
     </script>
   </body>
 </html>
