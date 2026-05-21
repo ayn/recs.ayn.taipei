@@ -88,6 +88,15 @@ export const recs: Rec[] = [
     mapQuery: "Jiufen Old Street",
   },
   {
+    name: "Yingge Ceramics Old Street / 鶯歌陶瓷老街",
+    area: "Yingge, day trip",
+    category: "first-time",
+    note: "Pottery town just outside Taipei. Good for ceramics shops, small gifts, and a slower hands-on afternoon if someone wants something craftier than another mall or night market.",
+    tags: ["day trip", "pottery", "crafts"],
+    mapQuery: "Yingge Ceramics Old Street",
+    mapUrl: "https://www.google.com/maps?cid=8172425620574256624",
+  },
+  {
     name: "Taipei 101 / 台北101 / Xinyi 信義",
     area: "Xinyi",
     category: "first-time",
@@ -124,8 +133,8 @@ export const recs: Rec[] = [
     name: "Zhongshan / 中山",
     area: "Zhongshan",
     category: "neighborhoods",
-    note: "Good for shopping, cafes, small boutiques, and a more stylish Taipei afternoon.",
-    tags: ["shopping", "cafes", "afternoon"],
+    note: "Good for shopping, cafes, small boutiques, K-pop shops, Korean boutiques, and a more stylish Taipei afternoon.",
+    tags: ["shopping", "cafes", "korean boutiques"],
     mapQuery: "Zhongshan Station Taipei",
   },
   {
@@ -143,6 +152,15 @@ export const recs: Rec[] = [
     note: "Old Taipei, tea, dried goods, restored buildings, small shops. Nice slower walk.",
     tags: ["old taipei", "tea", "slow walk"],
     mapQuery: "Dihua Street Taipei",
+  },
+  {
+    name: "Ri Xing Type Foundry / 日星鑄字行",
+    area: "Datong",
+    category: "neighborhoods",
+    note: "Tiny, special letterpress type foundry tucked near Taiyuan Road. Great quick stop if you like typography, printing, or old Taipei craft.",
+    tags: ["old taipei", "type", "crafts"],
+    mapQuery: "Ri Xing Type Foundry 日星鑄字行 Taipei",
+    mapUrl: "https://www.google.com/maps/place/Ri+Xing+Type+Foundry+%E6%97%A5%E6%98%9F%E9%91%84%E5%AD%97%E8%A1%8C",
   },
   {
     name: "Tianmu / 天母",
