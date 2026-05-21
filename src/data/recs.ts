@@ -80,7 +80,7 @@ export const sections: Section[] = [
 
 export const recs: Rec[] = [
   {
-    name: "Jiufen Old Street",
+    name: "Jiufen Old Street / 九份老街",
     area: "Ruifang, day trip",
     category: "first-time",
     note: "Tourist-heavy, but still magical for a first Taiwan trip. Lanterns, stairs, tea houses, mountain and ocean views. Best late afternoon into evening. It is outside Taipei city, but close enough to include.",
@@ -88,7 +88,7 @@ export const recs: Rec[] = [
     mapQuery: "Jiufen Old Street",
   },
   {
-    name: "Taipei 101 / Xinyi",
+    name: "Taipei 101 / 台北101 / Xinyi 信義",
     area: "Xinyi",
     category: "first-time",
     note: "The obvious landmark, but still fun if it is your first time. Good to combine with food, a mall break, or wandering around Xinyi.",
@@ -97,7 +97,7 @@ export const recs: Rec[] = [
     mapQuery: "Taipei 101",
   },
   {
-    name: "Elephant Mountain",
+    name: "Elephant Mountain / 象山",
     area: "Xinyi",
     category: "first-time",
     note: "Short but sweaty stairs, classic Taipei 101 view. Best around sunset if the weather is clear.",
@@ -105,7 +105,7 @@ export const recs: Rec[] = [
     mapQuery: "Elephant Mountain Taipei",
   },
   {
-    name: "Chiang Kai-shek Memorial Hall",
+    name: "Chiang Kai-shek Memorial Hall / 中正紀念堂",
     area: "Zhongzheng",
     category: "first-time",
     note: "Big iconic Taipei landmark. Easy stop if you are nearby, and the plaza gives you a lot of Taipei in one glance.",
@@ -121,7 +121,7 @@ export const recs: Rec[] = [
     mapQuery: "Yongkang Street Taipei",
   },
   {
-    name: "Zhongshan",
+    name: "Zhongshan / 中山",
     area: "Zhongshan",
     category: "neighborhoods",
     note: "Good for shopping, cafes, small boutiques, and a more stylish Taipei afternoon.",
@@ -129,7 +129,7 @@ export const recs: Rec[] = [
     mapQuery: "Zhongshan Station Taipei",
   },
   {
-    name: "Ximending",
+    name: "Ximending / 西門町",
     area: "Wanhua",
     category: "neighborhoods",
     note: "Youthful, chaotic, neon, street food, shopping. More fun at night.",
@@ -137,7 +137,7 @@ export const recs: Rec[] = [
     mapQuery: "Ximending Taipei",
   },
   {
-    name: "Dadaocheng / Dihua Street",
+    name: "Dadaocheng / 大稻埕 / Dihua Street 迪化街",
     area: "Datong",
     category: "neighborhoods",
     note: "Old Taipei, tea, dried goods, restored buildings, small shops. Nice slower walk.",
@@ -145,7 +145,7 @@ export const recs: Rec[] = [
     mapQuery: "Dihua Street Taipei",
   },
   {
-    name: "Tianmu",
+    name: "Tianmu / 天母",
     area: "Shilin",
     category: "neighborhoods",
     note: "More relaxed, suburban, and international. Home to TAS and TJS, so the area has a different rhythm: cafes, brunch spots, bakeries, families, and an easy weekend pace. If you go, Oasis, All Day, and the weekend flea market are easy nearby stops.",
@@ -153,7 +153,7 @@ export const recs: Rec[] = [
     mapQuery: "Tianmu Taipei",
   },
   {
-    name: "Raohe Night Market",
+    name: "Raohe Night Market / 饒河夜市",
     area: "Songshan",
     category: "night-markets",
     note: "Best first night market. Straightforward layout, temple entrance, lots of classic snacks. Try the pepper bun.",
@@ -161,7 +161,7 @@ export const recs: Rec[] = [
     mapQuery: "Raohe Night Market",
   },
   {
-    name: "Ningxia Night Market",
+    name: "Ningxia Night Market / 寧夏夜市",
     area: "Datong",
     category: "night-markets",
     note: "Smaller and very food-focused. Good if you want eating more than games or shopping.",
@@ -169,7 +169,7 @@ export const recs: Rec[] = [
     mapQuery: "Ningxia Night Market",
   },
   {
-    name: "Shilin Night Market",
+    name: "Shilin Night Market / 士林夜市",
     area: "Shilin",
     category: "night-markets",
     note: "Famous and touristy. Not my top food pick, but still a classic if someone wants the big-name night market.",
@@ -177,7 +177,7 @@ export const recs: Rec[] = [
     mapQuery: "Shilin Night Market",
   },
   {
-    name: "Din Tai Fung",
+    name: "Din Tai Fung / 鼎泰豐",
     area: "Multiple locations",
     category: "food",
     note: "Famous worldwide, but still worth doing in Taipei. Xiao long bao, cucumber salad, fried rice, spicy wontons.",
@@ -195,7 +195,7 @@ export const recs: Rec[] = [
     mapQuery: "A Joy Taipei 101",
   },
   {
-    name: "Yongkang Beef Noodles",
+    name: "Yongkang Beef Noodles / 永康牛肉麵",
     area: "Yongkang",
     category: "food",
     note: "Classic beef noodle soup pick right by Yongkang Street.",
@@ -203,7 +203,7 @@ export const recs: Rec[] = [
     mapQuery: "Yongkang Beef Noodles Taipei",
   },
   {
-    name: "Lin Dong Fang Beef Noodles",
+    name: "Lin Dong Fang Beef Noodles / 林東芳牛肉麵",
     area: "Zhongshan",
     category: "food",
     note: "Another famous beef noodle option if it fits the route.",
@@ -211,7 +211,7 @@ export const recs: Rec[] = [
     mapQuery: "Lin Dong Fang Beef Noodles Taipei",
   },
   {
-    name: "Fu Hang Soy Milk",
+    name: "Fu Hang Soy Milk / 阜杭豆漿",
     area: "Zhongzheng",
     category: "food",
     note: "Classic Taiwanese breakfast. Great, but the line can be brutal. Go early or skip if lines ruin the mood.",
@@ -219,7 +219,7 @@ export const recs: Rec[] = [
     mapQuery: "Fu Hang Soy Milk Taipei",
   },
   {
-    name: "Smoothie House",
+    name: "Smoothie House / 思慕昔",
     area: "Yongkang",
     category: "desserts",
     note: "Classic Taipei mango shaved ice spot in Yongkang. Very first-time Taipei, in a good way.",
