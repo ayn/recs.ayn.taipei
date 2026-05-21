@@ -133,8 +133,8 @@ export const recs: Rec[] = [
     name: "Zhongshan / 中山",
     area: "Zhongshan",
     category: "neighborhoods",
-    note: "Good for shopping, cafes, small boutiques, K-pop shops, Korean boutiques, and a more stylish Taipei afternoon.",
-    tags: ["shopping", "cafes", "korean boutiques"],
+    note: "Good for shopping, cafes, small boutiques, Korean boutiques, and a more stylish Taipei afternoon. For K-pop albums and merch, HGMusic has two stores right across from each other nearby.",
+    tags: ["shopping", "cafes", "k-pop"],
     mapQuery: "Zhongshan Station Taipei",
   },
   {
