@@ -60,7 +60,7 @@ export const categories: { id: Category | "all"; label: string }[] = [
   { id: "night-markets", label: "Night markets" },
   { id: "food", label: "Food classics" },
   { id: "desserts", label: "Desserts" },
-  { id: "cafes", label: "Cute cafes" },
+  { id: "cafes", label: "Cafes" },
 ];
 
 export const sections: Section[] = [
@@ -91,7 +91,7 @@ export const sections: Section[] = [
   },
   {
     id: "cafes",
-    title: "Cute cafes, not coffee homework",
+    title: "Cafes, not coffee homework",
     dek: "Places that work even if nobody wants to talk about extraction.",
     link: {
       label: "Andrew's Taiwan coffee list",
@@ -402,9 +402,9 @@ export const recs: Rec[] = [
     name: "Moonshine Coffee Roasters",
     area: "Taipei",
     category: "cafes",
-    note: "Cute, polished cafe with legit coffee cocktails. The team has real competition pedigree; try Chocolate Gummy Bear if it is on the menu.",
+    note: "Polished cafe with legit coffee cocktails. The team has real competition pedigree; try Chocolate Gummy Bear if it is on the menu.",
     gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location before routing. Uber is easiest if it is not already near your day plan." },
-    tags: ["cute cafe", "coffee cocktails", "award-winning"],
+    tags: ["cafe", "coffee cocktails", "award-winning"],
     mapQuery: "Moonshine Coffee Roasters 私釀咖啡商行 Taipei",
   },
   {
