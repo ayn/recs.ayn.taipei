@@ -132,7 +132,7 @@ export const sections: Section[] = [
   {
     id: "outside-taipei",
     title: "Outside Taipei",
-    dek: "Not a full Taiwan itinerary, just a couple bigger trips worth considering.",
+    dek: "A few day trips and bigger trips worth considering.",
   },
   {
     id: "running-cycling",
@@ -154,7 +154,7 @@ export const recs: Rec[] = [
   {
     name: "Yingge Ceramics Old Street / 鶯歌陶瓷老街",
     area: "Yingge, day trip",
-    category: "first-time",
+    category: "outside-taipei",
     note: "Pottery town just outside Taipei. Good for ceramics shops, small gifts, and a slower hands-on afternoon if someone wants something craftier than another mall or night market.",
     gettingThere: { pills: [{ label: "TRA", tone: "train" }], detail: "Yingge Station, then walk or take a short taxi to the old street." },
     tags: ["day trip", "pottery", "crafts"],
@@ -714,17 +714,17 @@ export const recs: Rec[] = [
 export const routes = [
   {
     title: "Best first day",
-    stops: "Yongkang -> CKS Memorial Hall -> Taipei 101 / Xinyi -> Raohe Night Market",
+    stops: ["Yongkang", "CKS Memorial Hall", "Taipei 101 / Xinyi", "Raohe Night Market"],
     note: "Easy, classic, and not too clever. Good when someone lands with energy.",
   },
   {
     title: "Rainy day",
-    stops: "Zhongshan shops and cafes -> Taipei 101 mall -> Din Tai Fung number -> Taipei 101 wander",
+    stops: ["Zhongshan shops/cafes", "Taipei 101 mall", "Din Tai Fung number", "Taipei 101 wander"],
     note: "Keeps things flexible and mostly indoors, with the Din Tai Fung wait turned into useful wandering time.",
   },
   {
     title: "Touristy but worth it",
-    stops: "Jiufen late afternoon into evening",
+    stops: ["Jiufen late afternoon into evening"],
     note: "Go when the lanterns start turning on. Accept that it will be busy.",
   },
 ];
