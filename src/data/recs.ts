@@ -4,6 +4,7 @@ export type Category =
   | "night-markets"
   | "food"
   | "desserts"
+  | "bars"
   | "cafes";
 
 export type TransitTone =
@@ -60,6 +61,7 @@ export const categories: { id: Category | "all"; label: string }[] = [
   { id: "night-markets", label: "Night markets" },
   { id: "food", label: "Food classics" },
   { id: "desserts", label: "Desserts" },
+  { id: "bars", label: "Cocktails / bars" },
   { id: "cafes", label: "Cafes" },
 ];
 
@@ -88,6 +90,15 @@ export const sections: Section[] = [
     id: "desserts",
     title: "Desserts",
     dek: "Mango ice, tofu pudding, and a couple sweet stops.",
+  },
+  {
+    id: "bars",
+    title: "Cocktails and bars",
+    dek: "A few Taipei cocktail picks from a bartender-heavy Reddit list. Check hours, reservation rules, and smoking policies before going.",
+    link: {
+      label: "Credit: Reddit bar list",
+      href: "https://www.reddit.com/r/taiwan/comments/1rpr74h/extensive_taiwan_bar_recommendations_from_a/",
+    },
   },
   {
     id: "cafes",
@@ -407,6 +418,60 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Green Line", tone: "green" }], detail: "Zhongshan, then walk." },
     tags: ["dessert", "tea", "slow-taipei"],
     mapQuery: "榕美樹館 台北",
+  },
+  {
+    name: "AmorFati / 天命酒館",
+    area: "Taipei",
+    category: "bars",
+    note: "Cocktail and wine bar that is good for custom drinks based on what you like. Better when you want a slower conversation with the bar.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location and hours before routing." },
+    tags: ["cocktails", "wine", "custom drinks"],
+    mapQuery: "AmorFati 天命酒館 Taipei",
+  },
+  {
+    name: "Hidden City / 隱城小城外",
+    area: "Taipei",
+    category: "bars",
+    note: "Quiet, movie-inspired cocktail bar pick. Good if you want something more polished and lower-key than a loud night out.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check hours before going." },
+    tags: ["cocktails", "quiet", "date night"],
+    mapQuery: "Hidden City 隱城 小城外 Taipei",
+  },
+  {
+    name: "Nothingness / 無",
+    area: "Taipei",
+    category: "bars",
+    note: "Serious cocktail stop for classic drinks. Walk-in focused, so go earlier if this is a priority.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check current hours and line up early if needed." },
+    tags: ["cocktails", "classics", "walk-in"],
+    mapQuery: "Nothingness 無 Taipei bar",
+  },
+  {
+    name: "unDer lab",
+    area: "Taipei",
+    category: "bars",
+    note: "Basement cocktail bar with more experimental drinks and food. Good when you want the drinks to be the point of the night.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check current booking rules before going." },
+    tags: ["cocktails", "experimental", "food"],
+    mapQuery: "unDer lab Taipei",
+  },
+  {
+    name: "Staff Only Club",
+    area: "Taipei",
+    category: "bars",
+    note: "Atmospheric cocktail bar in one of Taipei's remaining military dependents' village areas. Good for house cocktails and a setting that feels different.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check reservations and seating rules first." },
+    tags: ["cocktails", "atmosphere", "house drinks"],
+    mapQuery: "Staff Only Club Taipei",
+  },
+  {
+    name: "Bar Chihana / 千華",
+    area: "Taipei",
+    category: "bars",
+    note: "Late-night industry bar for classic cocktails. Best for cocktail people, especially very late. Indoor smoking may be a dealbreaker.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check hours first; this is more of a late-night pick." },
+    tags: ["late night", "cocktails", "smoking"],
+    mapQuery: "Bar Chihana 千華 Taipei",
   },
   {
     name: "Moonshine Coffee Roasters",
