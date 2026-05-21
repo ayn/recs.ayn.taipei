@@ -193,6 +193,21 @@ const description =
         background: rgba(255, 250, 241, 0.82);
       }
 
+      .rec-photo {
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: var(--accent-soft);
+      }
+
+      .rec-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
       .rec h3 {
         margin-bottom: 4px;
         font-size: 1.25rem;
@@ -338,6 +353,11 @@ const description =
               .filter((rec) => rec.category === section.id)
               .map((rec) => (
                 <article class="rec" data-category={rec.category}>
+                  {rec.image && (
+                    <figure class="rec-photo">
+                      <img src={rec.image.src} alt={rec.image.alt} loading="lazy" />
+                    </figure>
+                  )}
                   <div>
                     <div class="area">{rec.area}</div>
                     <h3>{rec.name}</h3>

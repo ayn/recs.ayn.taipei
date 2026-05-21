@@ -44,9 +44,12 @@ Edit `src/data/recs.ts`. Each recommendation has:
 - `note`
 - `tags`
 - `mapQuery`
+- optional `image: { src, alt }`
 
 Map links are Google Maps search URLs generated from `mapQuery`.
+Put future photos in `public/photos/` and reference them as `/photos/name.jpg`.
 
 ## TODO
 
 - Swap in personal favorites as this guide gets field-tested.
+- Add personal photos for key cards.
