@@ -42,6 +42,8 @@ export type Rec = {
   tags: string[];
   mapQuery: string;
   mapUrl?: string;
+  actionLabel?: string;
+  hideMap?: boolean;
   image?: {
     src: string;
     alt: string;
@@ -335,6 +337,7 @@ export const recs: Rec[] = [
     tip: "Buy and top up at MRT stations, 7-Eleven, FamilyMart, and other convenience stores. Convenience stores often have more fun designs if you want a cute one instead of the plain MRT-station card.",
     tags: ["transit", "convenience stores", "easy"],
     mapQuery: "Taipei Main Station EasyCard",
+    hideMap: true,
   },
   {
     name: "YouBike / U-Bike",
@@ -345,6 +348,7 @@ export const recs: Rec[] = [
     tags: ["bike share", "cheap", "easy"],
     mapQuery: "YouBike Taipei",
     mapUrl: "https://en.youbike.com.tw/region/taipei/",
+    actionLabel: "Official site",
   },
   {
     name: "Uber",
@@ -353,6 +357,8 @@ export const recs: Rec[] = [
     note: "Uber is usually cheap in Taipei and easier than cabs if you do not speak Chinese. Especially useful late at night, in the rain, or for places that are awkward from the MRT.",
     tags: ["transport", "easy", "rainy day"],
     mapQuery: "Taipei",
+    mapUrl: "https://www.uber.com/tw/en/",
+    actionLabel: "Official site",
   },
   {
     name: "Uber Eats",
@@ -361,6 +367,8 @@ export const recs: Rec[] = [
     note: "Uber Eats is really inexpensive and convenient in Taipei. Great fallback when you want good food without fighting restaurant lines, crowds, heat, or rain.",
     tags: ["food delivery", "easy", "rainy day"],
     mapQuery: "Taipei restaurants",
+    mapUrl: "https://www.ubereats.com/tw-en",
+    actionLabel: "Official site",
   },
   {
     name: "Raohe Night Market / 饒河夜市",
