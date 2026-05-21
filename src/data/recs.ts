@@ -412,7 +412,7 @@ export const recs: Rec[] = [
     name: "Moonshine Coffee Roasters",
     area: "Taipei",
     category: "cafes",
-    note: "Polished cafe with legit coffee cocktails. The team has real competition pedigree; try Chocolate Gummy Bear if it is on the menu.",
+    note: "Polished cafe with legit coffee cocktails. The team has real competition pedigree; try Morning Mist, their award-winning drink, if it is on the menu.",
     gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "Check the current location before routing. Uber is easiest if it is not already near your day plan." },
     tags: ["cafe", "coffee cocktails", "award-winning"],
     mapQuery: "Moonshine Coffee Roasters 私釀咖啡商行 Taipei",
