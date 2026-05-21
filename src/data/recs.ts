@@ -183,7 +183,7 @@ export const recs: Rec[] = [
   {
     name: "Jiantanshan Trail to the overlook / 劍潭山親山步道",
     area: "Shilin",
-    category: "first-time",
+    category: "running-cycling",
     note: "Easy MRT-accessible hill walk with a great overlook. Nice alternative if Elephant Mountain is too obvious or you want views toward the Grand Hotel and northern Taipei.",
     tip: "The map points to the overlook. Start from Jiantan Station and follow the Jiantanshan Trail up.",
     gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }], detail: "Jiantan, Exit 2. Walk about 10 minutes to the trailhead." },
