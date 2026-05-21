@@ -328,6 +328,15 @@ export const recs: Rec[] = [
     mapUrl: "https://maps.app.goo.gl/SrcPShRgqH8QbqsH8",
   },
   {
+    name: "EasyCard / 悠遊卡",
+    area: "Across Taipei",
+    category: "getting-around",
+    note: "The easiest transit card for Taipei. Use it for MRT, buses, Maokong Gondola, YouBike setup, convenience stores, and lots of small payments.",
+    tip: "Buy and top up at MRT stations, 7-Eleven, FamilyMart, and other convenience stores. Convenience stores often have more fun designs if you want a cute one instead of the plain MRT-station card.",
+    tags: ["transit", "convenience stores", "easy"],
+    mapQuery: "Taipei Main Station EasyCard",
+  },
+  {
     name: "YouBike / U-Bike",
     area: "Across Taipei",
     category: "getting-around",
