@@ -1,0 +1,5 @@
+# Cloudflare Pages project config. The custom domain still needs to be
+# attached in the Pages dashboard: recs.ayn.taipei -> this project.
+name = "recs-ayn-taipei"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-05-21"
