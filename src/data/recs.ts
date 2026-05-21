@@ -250,6 +250,16 @@ export const recs: Rec[] = [
     mapQuery: "A Joy Taipei 101",
   },
   {
+    name: "Wulao Hotpot / 無老鍋",
+    area: "Yongkang / Xinyi",
+    category: "food",
+    note: "Reliable nicer hot pot pick that still feels easy for visitors. I would aim for the Yongkang or Xinyi location depending on the rest of the day.",
+    tip: "Make a reservation if you can, especially for dinner.",
+    gettingThere: { pills: [{ label: "MRT Red Line", tone: "red" }, { label: "MRT Orange Line", tone: "orange" }], detail: "Dongmen for Yongkang, or Taipei 101 / Xinyi Anhe area for Xinyi." },
+    tags: ["hot pot", "dinner", "reservation"],
+    mapQuery: "Wulao Hotpot Taipei",
+  },
+  {
     name: "Yongkang Beef Noodles / 永康牛肉麵",
     area: "Yongkang",
     category: "food",
@@ -275,6 +285,16 @@ export const recs: Rec[] = [
     gettingThere: { pills: [{ label: "MRT Blue Line", tone: "blue" }], detail: "Shandao Temple. The entrance is upstairs in Huashan Market." },
     tags: ["breakfast", "classic", "go early"],
     mapQuery: "Fu Hang Soy Milk Taipei",
+  },
+  {
+    name: "Yong He Soy Milk / 永和豆漿",
+    area: "Multiple locations",
+    category: "food",
+    note: "Casual Taiwanese breakfast chain-style classic. Good for soy milk, dan bing, rice rolls, and fried dough without committing to the Fu Hang line.",
+    gettingThere: { pills: [{ label: "Map first", tone: "neutral" }], detail: "There are locations everywhere. Use this popular branch if it fits your route." },
+    tags: ["breakfast", "soy milk", "easy"],
+    mapQuery: "Yong He Soy Milk Taipei",
+    mapUrl: "https://maps.app.goo.gl/oYTjUEP3yC9EyeSX6",
   },
   {
     name: "Smoothie House / 思慕昔",
