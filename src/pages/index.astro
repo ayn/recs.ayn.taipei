@@ -258,6 +258,73 @@ const description =
         text-transform: uppercase;
       }
 
+      .getting-there {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 10px;
+        align-items: center;
+        margin: 0;
+        padding: 10px 12px;
+        border: 1px solid rgba(223, 209, 189, 0.78);
+        background: rgba(255, 250, 241, 0.72);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .transit-pill {
+        display: inline-flex;
+        min-height: 26px;
+        align-items: center;
+        padding: 5px 9px;
+        border-radius: 999px;
+        background: #efe5d8;
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .transit-pill[data-tone="red"] {
+        background: #c7372f;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="green"] {
+        background: #27815f;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="blue"] {
+        background: #266fb7;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="brown"] {
+        background: #9a6a3a;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="mixed"] {
+        background: #25211c;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="train"] {
+        background: #5a7658;
+        color: #fffaf1;
+      }
+
+      .transit-pill[data-tone="car"] {
+        background: var(--accent);
+        color: #fffaf1;
+      }
+
+      .transit-detail {
+        flex: 1 1 190px;
+      }
+
       .rec-bottom {
         display: flex;
         flex-wrap: wrap;
@@ -342,7 +409,8 @@ const description =
         }
 
         .note,
-        .tip {
+        .tip,
+        .getting-there {
           grid-column: 2;
         }
 
@@ -416,6 +484,14 @@ const description =
                   {rec.tip && (
                     <p class="tip">
                       <strong>Tip</strong> {rec.tip}
+                    </p>
+                  )}
+                  {rec.gettingThere && (
+                    <p class="getting-there">
+                      <span class="transit-pill" data-tone={rec.gettingThere.tone}>
+                        {rec.gettingThere.label}
+                      </span>
+                      <span class="transit-detail">{rec.gettingThere.detail}</span>
                     </p>
                   )}
                   <div class="rec-bottom">

@@ -45,6 +45,8 @@ Edit `src/data/recs.ts`. Each recommendation has:
 - `area`
 - `category`
 - `note`
+- optional `tip`
+- optional `gettingThere: { label, tone, detail }`
 - `tags`
 - `mapQuery`
 - optional `image: { src, alt }`
